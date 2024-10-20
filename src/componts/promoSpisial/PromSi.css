@@ -1,0 +1,93 @@
+.promoSpesial {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.promoSpesial .container {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.promoSpesial .container .cart {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.promoSpesial .container .cart .discount {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+}
+
+.promoSpesial .container .cart .discount h2 {
+    color: #fff;
+    background-color: rgb(114, 191, 253);
+    padding: 8px 20px;
+    font-size: 22px;
+    font-weight: normal;
+    border-radius: 50px;
+}
+
+.promoSpesial .container .cart .tot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promoSpesial .container .cart .tot .image {
+    width: 210px;
+    overflow: hidden;
+}
+
+.promoSpesial .container .cart .tot .image img {
+    width: 100%;
+}
+
+
+
+.promoSpesial .container .cart .shomDatalis{
+    display: flex;
+    justify-content: flex-end;
+}
+.promoSpesial .container .cart .shomDatalis a {
+    padding: 8px 30px;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 0 20px 0 20px;
+    cursor: pointer;
+    background-color: rgb(2, 60, 97);
+
+}
+
+@media (max-width:500px) {
+    .promoSpesial .container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .promoSpesial .container .cart .tot .image {
+        width: 170px;
+        overflow: hidden;
+    }
+
+    .promoSpesial .container .cart .tot .titel h2 {
+        font-size: 19px;
+    }
+}
+@media (max-width:400px) {
+    .promoSpesial .container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    .promoSpesial .container .cart .tot {
+        flex-direction: column;
+    }
+    .promoSpesial .container .cart   .shomDatalis a {
+        padding: 6px 20px;
+        font-size: 18px;
+    
+    }
+}

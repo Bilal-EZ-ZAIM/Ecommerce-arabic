@@ -1,0 +1,29 @@
+.brands{
+    height: auto;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.brands .container .toutMArks{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+@media (max-width:600px) {
+    .brands .container .toutMArks{
+        justify-content: center;
+    }
+}
+.brands .container .toutMArks .marka{
+    width: 280px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brands .container .toutMArks .marka img{
+    width: 100px;
+    height: 100px;
+}

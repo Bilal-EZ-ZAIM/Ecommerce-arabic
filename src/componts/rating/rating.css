@@ -1,0 +1,50 @@
+.titel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 18vh;
+    flex: 1;
+}
+
+.titel .tirming {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.titel .tirming h4:first-child {
+    color: #fff;
+    background-color: rgb(5, 158, 5);
+    height: 22px;
+    width: 45px;
+    border-radius: 7px;
+    padding: 0 5px;
+    padding: 2px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titel .tirming h4 i {
+    font-size: 14px;
+}
+
+.titel .tirming h4:last-child {
+    color: rgb(4, 179, 179);
+    font-size: 17px;
+}
+
+.titel .pracing {
+    display: flex;
+    gap: 10px;
+    color: #333;
+    font-size: 17px;
+}
+
+.titel .pracing .oldPrice {
+    color: rgb(150, 42, 2);
+    text-decoration: line-through;
+    font-weight: 900;
+}

@@ -1,0 +1,9 @@
+.promo{
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.promo .container h2 span{
+    color: rgb(151, 4, 4);
+}

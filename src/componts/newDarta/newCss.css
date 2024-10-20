@@ -1,0 +1,146 @@
+.datalist{
+    min-height: 80vh;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.datalist .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(380px , 1fr));
+    gap: 20px;
+}
+.datalist .container .images{
+    min-height:40vh;
+    padding: 10px;
+    background-color: #fff;
+}
+.datalist .container .images .grandImag{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.datalist .container .images .grandImag img{
+    width: 300px;
+    height: 300px;
+}
+
+.datalist .container .images .petitImage{
+    width: 100%;
+    display: flex;
+    min-height: 10vh;
+    justify-content: center;
+    gap: 10px;
+}
+.datalist .container .images .petitImage img{
+    width: 100px;
+    height: 90px;
+    box-shadow:  0 0 3px #b8b8b8;
+    cursor: pointer;
+}
+.datalist .container .datali{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    padding-right:20px ;
+}
+.titel{
+    display: flex;
+    align-items: flex-start;
+    max-height: 15vh;
+}
+.datalist .container .datali .lacontite{
+    margin: 10px 0;
+}
+.datalist .container .datali .addToCart{
+    height: 50;
+    display: flex;
+    margin: 10px 0;
+    gap: 10px;
+}
+.datalist .container .datali .addToCart input{
+    border: 2px solid #b8b8b8;
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    font-size: 18px;
+}
+.datalist .container .datali .addToCart button{
+    width: 240px;
+    background-color: rgba(6, 97, 133, 0.685);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+}
+@media (max-width:340px) {
+    .titel h2{
+        font-size: 18px;
+    }
+    .datalist .container .datali .addToCart button{
+        width: 150px;
+        font-size: 18px;
+        padding: 5px;
+    }
+    .datalist .container .datali .addToCart{
+        height: 50;
+        display: flex;
+        margin: 10px 0;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    .datalist .container .datali .addToCart input{
+        width: 60px;
+        font-size: 16px;
+    }
+}
+@media (max-width:440px) {
+    .datalist .container{
+        grid-template-columns: repeat(auto-fill,minmax(250px , 1fr));
+
+    }
+    .datalist .container .images .grandImag img{
+        width: 100%;
+    }
+    .datalist .container .images .petitImage img{
+        min-width: 40px;
+        min-height: 40px;
+        box-shadow:  0 0 3px #b8b8b8;
+        cursor: pointer;
+    }
+}
+@media (max-width:440px) {
+    .datalist .container{
+        grid-template-columns: repeat(auto-fill,minmax(200px , 1fr));
+
+    }
+    .datalist .container .images .petitImage{
+        flex-wrap: wrap;
+    }
+    .datalist .container .images .petitImage img{
+        min-width: 50px;
+        min-height: 50px;
+    }
+}
+.datalist .discribtion {
+    height: auto;
+    padding: 40px;
+}
+.datalist .discribtion h1{
+    margin-bottom: 20px;
+}
+.datalist .discribtion p{
+    color: #666;
+    line-height: 1.6;
+    height: auto;
+    text-align: center;
+}
+@media (max-width:400px) {
+    .datalist .discribtion {
+        height: auto;
+        padding: 40px 5px;
+    }
+}

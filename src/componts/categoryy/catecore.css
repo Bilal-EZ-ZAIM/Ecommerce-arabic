@@ -1,0 +1,25 @@
+.catecore{
+    width: 100%;
+    height: auto;
+    margin: 40px 0;
+}
+.catecore .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px,1fr));
+    gap: 20px;
+}
+.catecore .container div{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #666;
+}
+.catecore .container div img{
+    width: 100px;
+    height: 110px;
+}

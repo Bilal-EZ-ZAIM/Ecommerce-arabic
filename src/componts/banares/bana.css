@@ -1,0 +1,43 @@
+.banars{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+.banars .container{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.banars .container .one{
+    width: 600px;
+    height: 350px;
+}
+.banars .container .one img{
+    width: 100%;
+    height: 100%;
+}
+@media (max-width:992px) {
+    .banars .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .banars .container .one{
+        width: 100%;
+    }
+}
+@media (max-width:470px){
+    .banars .container .one{
+        height: 250px;
+    }
+}
+@media (max-width:360px){
+    .banars .container .one{
+        height: 200px;
+    }
+}
+@media (max-width:470px){
+    .banars .container .one{
+        height: 150px;
+    }
+}

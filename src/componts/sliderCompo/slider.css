@@ -1,0 +1,80 @@
+.slaider{
+    height: auto;
+    width: 100%;
+    margin: 50px 0;
+    position: relative;
+}
+
+.slaider .container{
+    overflow: hidden;
+    position: relative;
+    
+    
+}
+.slaider .container .parntSilder{
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    min-height: 50vh;
+    transition: 1s;
+    gap: 10px;
+    justify-content: flex-start;
+    
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 25px;
+    padding: 5px;
+}
+.slaider  .right,
+.slaider  .left{
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    z-index: 8888;
+    font-size: 22px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.slaider .right{
+    right: 0;
+}
+.slaider  .left{
+    left:20px;
+}
+.slaider .container .parntSilder .cartlider{
+    background-color: #fff;
+    height: 90%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: 1s;
+    cursor: pointer;
+}
+@media (max-width:300px) {
+    .slaider .container .parntSilder .cartlider{
+        min-width: 100%;
+    }
+}
+.slaider .container .parntSilder .cartlider img{
+    width: 200px;
+}
+.slaider .container .parntSilder .cartlider .titel{
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.slaider .container .parntSilder .cartlider .titel h2{
+    font-size: 18px;
+}
